@@ -15,18 +15,10 @@ ul {
 }
 .menu-item {
     display: inline-block;
+    margin-right: 103px;
 }
-.menu-item:nth-of-type(1){
-    margin-right: 117px;
-}
-.menu-item:nth-of-type(2){
-    margin-right: 98px;
-}
-.menu-item:nth-of-type(3){
-    margin-right: 91px;
-    
-}
-.menu-item:nth-of-type(4){
+
+.menu-item:last-child {
     margin: 0px;
     
 }
@@ -47,36 +39,35 @@ ul {
 /* Main Content */
 .title {
     font-family: 'Ubuntu', sans-serif;
-    padding-top: 31px;
     color: #b4ad9e;
     font-size: 14px;
     font-weight: 300;
     line-height: 16px;
     text-transform: uppercase;
-    margin: 0px;
+    margin: 0px 0px 24px 0px;
 }
 h2 {
-    margin: 0px;
-    padding-top: 24px;
     font-size: 30px;
     font-weight: 400;
     line-height: 36px;  
+    margin: 0px 0px 26px 0px;
 }
 p {
     margin: 0px;
-    padding-top: 26px;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;  
 }
 
-.one, .two, .three {
+.box{
     width: 900px;
     margin: auto;
     font-size: 0px;
     padding-top: 96px;
 }
-
+.box img {
+    margin-bottom: 31px;
+}
 .left {
     display:inline-block;
     width: 420px;
@@ -88,18 +79,16 @@ p {
     width: 420px;
 }
 
-.button {
+.button-holder {
     text-align: center;
     padding: 51px 0px 70px 0px;
 }
 .button-style {
-    display: inline-block;
     width: 162px;
     color: #626262;
     padding: 17px 0px 17px 0px;
     font-size: 20px;
     line-height:24px;
     font-weight: 400;
-    text-decoration: none;
     border: 1px solid #626262;
 } 
