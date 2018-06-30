@@ -1,0 +1,225 @@
+/* * {
+    outline: 1px solid red;
+} */
+
+header {
+    font-family: 'Roboto', Arial, sans-serif;
+    width: 1110px;
+    margin: auto;
+    padding: 33px 0px 0px 0px;
+    position: relative;
+}
+
+.clearfix::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+.logo:first-letter{
+    color: #1abc9c;
+    font-family: "Roboto";
+    font-weight: 900;
+}
+.logo {
+    float: left;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #555252;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 32px;
+    margin: 0px;
+    padding:0px;
+}
+
+.menu {
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    top: 8px;
+}
+.menu li {
+    list-style: none;
+    float: left;
+}
+
+.menu-link {
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #0f0101;
+    font-family: "Open Sans";
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700;
+}
+.menu li:not(:last-child) {
+    margin-right: 34px;
+}
+.menu-link:hover {
+    color: #1abc9c; 
+}
+/* Style for "FEATURED P" */
+.catalogue {
+    padding: 86px 0px 0px 0px;
+    width: 1110px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #515151;
+    font-family: "Roboto";
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 58px;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+}
+ .fp {
+    margin: 0px 0px 126px 0px;
+ }
+ .fp::after {
+    display: block;
+    width: 164px;
+    height: 7px;
+    margin: auto;
+    content: "";
+    background-color: #1abc9c;
+    position: relative;
+    top: 27px;
+ }
+ /* Style for "CATALOGUE" */
+
+ .catalogue-list, .last-news {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+ }
+ .catalogue-item {
+    float: left;
+    width: 255px;
+    height: 322px;
+    background-color: #e9f0fd;
+ }
+ .catalogue-item:not(:nth-child(4n)) {
+    margin: 0px 30px 30px 0px;
+
+ }
+ /* Style for "PRODUCTS" */
+
+ .catalogue-item img {
+    display: block;
+    margin: 0 auto; 
+}
+
+ p {
+    font-family: "Roboto";
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.36px;
+    text-transform: uppercase;
+    margin: 0;
+}
+.title {
+    float: left;
+    padding: 6px 0px 0px 12px;    
+}
+
+.price {
+    text-align: center; 
+    padding: 6px 0px 0px 0px;
+}
+.box1 {
+    
+    width: 255px;
+    height: 40px;
+    background-color: #323232;
+}
+.catalogue-item:hover .box1 {
+    background-color: #1abc9c;
+}
+.box2 {
+    margin-left: auto;
+    width: 54px;
+    height: 40px;
+    background-color:rgb(255,255,255,0.44);
+}
+
+/* Style for "LAST NEWS" */
+
+.news {
+    padding: 86px 0px 81px 0px;
+    width: 1110px;
+    margin: 0 auto;
+}
+.ln {
+    margin: 0px 0px 115px 0px;
+}
+.ln::after {
+    display: block;
+    width: 164px;
+    height: 7px;
+    margin: auto;
+    content: "";
+    background-color: #1abc9c;
+    position: relative;
+    top: 27px;
+ }
+
+ h3 {
+    font-family: "Open Sans";
+    color: #555252;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: -0.36px;
+    position: relative;
+    margin: 0px 0px 33px 0px;
+ }
+ h3::after {
+    display: block;
+    width: 136px;
+    height: 3px;
+    content: "";
+    background-color: #1abc9c;
+    position: relative;
+    top: 11px;
+ }
+
+ .news-item p {
+    font-family: "Open Sans";
+    color: #555252;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -0.28px;
+    margin: 0px 0px 20px 0px;
+ }
+ .news-item {
+    float: left;
+    width: 350px;
+ }
+ .news-item img {
+     margin: 0px 0px 15px 0px;
+ }
+ .news-item:not(:nth-child(3n)) {
+    margin: 0px 30px 0px 0px;
+ }
+ .button-style {
+    width: 160px;
+    height: 51px;
+    border: none;
+    border-radius: 3px;
+    background-color: #4ec6ab;
+    padding: 12px 0px 12px 0px;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+    letter-spacing: -0.32px;
+ }
