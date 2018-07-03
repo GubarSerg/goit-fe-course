@@ -69,7 +69,7 @@ main {
 
 h2 {
     color: #515151;
-    font-family: "Roboto";
+    font-family: "Roboto", Arial, sans-serif;
     font-size: 48px;
     font-weight: 900;
     line-height: 58px;
@@ -78,7 +78,7 @@ h2 {
     position: relative;
 }
  .fp {
-    margin: 0px 0px 126px 0px;
+    margin: 0px 0px 126px;
  }
  .fp::after {
     display: block;
@@ -110,7 +110,7 @@ h2 {
 }
 
  p {
-    font-family: "Roboto";
+    font-family: "Roboto", Arial, sans-serif;
     color: rgb(255, 255, 255);
     font-size: 18px;
     font-weight: 700;
@@ -126,7 +126,7 @@ h2 {
 
 .price {
     text-align: center; 
-    padding: 6px 0px 0px 0px;
+    padding: 6px 0px 0px;
 }
 .box1 {
     
@@ -147,7 +147,7 @@ h2 {
 /* Style for "LAST NEWS" */
 
 .news {
-    padding: 86px 0px 81px 0px;
+    padding: 86px 0px 81px;
     width: 1110px;
     margin: 0 auto;
 }
@@ -166,14 +166,14 @@ h2 {
  }
 
  h3 {
-    font-family: "Open Sans";
+    font-family: "Open Sans", Arial, sans-serif;
     color: #555252;
     font-size: 18px;
     font-weight: 600;
     line-height: 26px;
     letter-spacing: -0.36px;
     position: relative;
-    margin: 0px 0px 33px 0px;
+    margin: 0px 0px 33px;
  }
  h3::after {
     display: block;
@@ -186,7 +186,7 @@ h2 {
  }
 
  .news-item p {
-    font-family: "Open Sans";
+    font-family: "Open Sans", Arial, sans-serif;
     color: #555252;
     font-size: 14px;
     font-weight: 400;
@@ -212,7 +212,7 @@ h2 {
     background-color: #4ec6ab;
     padding: 12px 0px 12px 0px;
     color: #ffffff;
-    font-family: "Open Sans";
+    font-family: "Open Sans", Arial, sans-serif;
     font-size: 16px;
     font-weight: 300;
     line-height: 26px;
