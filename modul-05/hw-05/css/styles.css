@@ -260,7 +260,7 @@ p {
   left: 0px;
   bottom: 0px;
   background-color: #323232;
-  background-image: url("/img/icons/basket.png");
+  background-image: url("../img/icons/basket.png");
   background-repeat: no-repeat;
   background-position: 10% 50%;
   text-transform: uppercase;
@@ -276,7 +276,7 @@ p {
 .icon1 {
   position: absolute;
   left: 0px;
-  background-image: url("/img/icons/heart.png");
+  background-image: url("../img/icons/heart.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -285,14 +285,14 @@ p {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  background-image: url("/img/icons/arrows.png");
+  background-image: url("../img/icons/arrows.png");
   background-repeat: no-repeat;
   background-position: center;
 }
 .icon3 {
   position: absolute;
   right: 0px;
-  background-image: url("/img/icons/clock.png");
+  background-image: url("../img/icons/clock.png");
   background-repeat: no-repeat;
   background-position: center;
 }
