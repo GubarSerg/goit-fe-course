@@ -1,8 +1,8 @@
 /* * {
     outline: 1px solid red;
 } */
-
-header {
+/* Site Navigation */
+.navmenu {
   font-family: "Roboto", Arial, sans-serif;
   width: 1110px;
   margin: auto;
@@ -57,45 +57,36 @@ header {
 .menu-link:hover {
   color: #1abc9c;
 }
-/* Style for "Slider" */
-.slider {
-  position: relative;
-  height: 600px;
-}
+/* Header "Slider" */
 .slides {
-  margin: 0px;
-  padding: 0px;
-}
-.slides li {
-  list-style: none;
-}
-.slides img {
-  margin: auto;
+  position: relative;
   width: 100%;
   height: 600px;
+  background: url(../img/slide4.jpg) #323232  no-repeat center center;
   object-fit: cover;
-  display: block;
 }
-.img-overlay {
-  position: absolute;
+.slides::after {
   width: 100%;
   height: 600px;
-  background: rgba(0, 0, 0, 0.52);
+  background-color: rgba(0, 0, 0, 0.55);
 }
+.slides::before{
+
+}
+
 .slider-ctrl {
   position: absolute;
   width: 1110px;
   height: 600px;
-  margin: 0 auto;
-  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
+  z-index: 10;
+  
 }
 .slider-button {
   width: 106px;
   height: 106px;
   border: none;
-  display: inline-block;
   position: absolute;
   background-color: rgba(26, 188, 156, 0.65);
   top: 50%;
@@ -112,11 +103,11 @@ header {
   cursor: pointer;
 }
 .slides-text {
-  height: 106px;
-  position: absolute;
-  top: 50%;
-  left: 185px;
-  transform: translateY(-50%);
+ position: absolute;
+ height: 106px; 
+ left: 50%; 
+ top: 50%;
+ transform: translate(-50%, -50%);
 }
 .slides-text h2 {
   color: #ffffff;
@@ -125,6 +116,7 @@ header {
   font-weight: 900;
   letter-spacing: -1.2px;
   text-transform: uppercase;
+  text-align: left;
   margin: 0px 0px 20px 0px;
 }
 .slides-text p {
@@ -244,7 +236,6 @@ p {
   margin: 0;
   padding: 0;
   border: 1px solid #ffffff;
-  display: inline-block;
   width: 50px;
   height: 50px;
   background-color: transparent;
@@ -304,9 +295,11 @@ p {
   text-align: center;
 }
 .copyright span {
+  display: inline-block;
+  padding-top: 33px;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 16px;
-  line-height: 90px;
+  line-height: 28px;
   font-weight: 300;
   color: #ffffff;
   letter-spacing: -0.32px;
