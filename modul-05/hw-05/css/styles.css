@@ -1,7 +1,9 @@
 /* * {
     outline: 1px solid red;
 } */
+
 /* Site Navigation */
+
 .navmenu {
   font-family: "Roboto", Arial, sans-serif;
   width: 1110px;
@@ -14,11 +16,13 @@
   content: "";
   clear: both;
 }
+
 .logo:first-letter {
   color: #1abc9c;
   font-family: "Roboto", Arial, sans-serif;
   font-weight: 900;
 }
+
 .logo {
   float: left;
   text-transform: uppercase;
@@ -36,6 +40,7 @@
   margin: 0px;
   padding: 0px;
 }
+
 .menu li {
   list-style: none;
   float: left;
@@ -51,27 +56,68 @@
   line-height: 32px;
   font-weight: 700;
 }
+
 .menu li:not(:last-child) {
   margin-right: 34px;
 }
+
 .menu-link:hover {
   color: #1abc9c;
 }
+
 /* Header "Slider" */
-.slides {
+
+.slider {
   position: relative;
   width: 100%;
   height: 600px;
-  background: url(../img/slide4.jpg) #323232  no-repeat center center;
-  object-fit: cover;
+  background: #323232;
 }
-.slides::after {
+
+.slides img {
   width: 100%;
   height: 600px;
-  background-color: rgba(0, 0, 0, 0.55);
+  display: block;
+  object-fit: cover;
 }
-.slides::before{
 
+.slides::after {
+  position: relative;
+  bottom: 600px;
+  width: 100%;
+  height: 600px;
+  background-color: rgba(0, 0, 0, 0.52);
+}
+
+.slides-text {
+  position: absolute;
+  bottom: 350px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 898px;
+  height: 106px;
+}
+
+.slides-text h2 {
+  color: #ffffff;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 60px;
+  font-weight: 900;
+  letter-spacing: -1.2px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0px 0px 20px 0px;
+}
+
+.slides-text p {
+  color: #ffffff;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 24px;
+  padding-left: 77px;
+  text-transform: uppercase;
 }
 
 .slider-ctrl {
@@ -81,8 +127,8 @@
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
-  
 }
+
 .slider-button {
   width: 106px;
   height: 106px;
@@ -92,46 +138,27 @@
   top: 50%;
   transform: translateY(-50%);
 }
+
 .prev {
   left: 0px;
 }
+
 .next {
   right: 0px;
 }
+
 .slider-button:hover {
   background-color: #1abc9c;
   cursor: pointer;
 }
-.slides-text {
- position: absolute;
- height: 106px; 
- left: 50%; 
- top: 50%;
- transform: translate(-50%, -50%);
-}
-.slides-text h2 {
-  color: #ffffff;
-  font-family: "Roboto", Arial, sans-serif;
-  font-size: 60px;
-  font-weight: 900;
-  letter-spacing: -1.2px;
-  text-transform: uppercase;
-  text-align: left;
-  margin: 0px 0px 20px 0px;
-}
-.slides-text p {
-  color: #ffffff;
-  font-family: "Roboto", Arial, sans-serif;
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 24px;
-  text-transform: uppercase;
-}
+
 /* Style for "New Collection" */
+
 main {
   padding-bottom: 100px;
   background-color: #e9f0fd;
 }
+
 .catalogue {
   width: 1110px;
   margin: 0 auto;
@@ -148,9 +175,11 @@ h2 {
   text-align: center;
   position: relative;
 }
+
 .fp {
   margin: 0px 0px 126px;
 }
+
 .fp::after {
   display: block;
   width: 164px;
@@ -161,69 +190,31 @@ h2 {
   position: relative;
   top: 27px;
 }
+
 /* Style for "CATALOGUE" */
 
-.catalogue-item {
-  float: left;
-  width: 255px;
+.catalogue-products {
+  position: relative;
+  width: 100%;
   height: 322px;
-  background-color: #e9f0fd;
-}
-.catalogue-item:not(:nth-child(4n + 1)) {
-  margin-right: 30px;
-}
-/* Style for "PRODUCTS" */
-
-.catalogue-item img {
-  display: block;
-  margin: 0 auto;
+  margin-right: 0px;
 }
 
-p {
-  font-family: "Roboto", Arial, sans-serif;
-  color: rgb(255, 255, 255);
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 40px;
-  letter-spacing: -0.36px;
-  text-transform: uppercase;
-  margin: 0;
-}
-.title {
-  float: left;
-  padding-left: 12px;
-}
+/* Style for "PRODUCTS CARD" */
 
-.price {
-  text-align: center;
-  float: right;
-  width: 54px;
-  height: 40px;
-  background-color: rgb(255, 255, 255, 0.44);
-}
-.box {
-  width: 255px;
-  height: 40px;
-  background-color: #323232;
-}
-.catalogue-item:hover .box {
-  background-color: #1abc9c;
-}
-.catalogue-item:hover .catalogue-item-action {
-  opacity: 1;
-}
-
-.catalogue-item-action {
+.catalogue-item-overlay {
   opacity: 0;
   box-sizing: border-box;
   position: absolute;
   width: 255px;
   height: 282px;
-  border: 10px solid rgba(255, 255, 255, 1);
-  background-color: rgba(0, 0, 0, 0.55);
+  left: 0px;
+  border: 10px solid #ffffff;
+  background-color: #000000;
 }
 
 .catalogue-item-buttons {
+  opacity: 0;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -241,10 +232,12 @@ p {
   background-color: transparent;
   cursor: pointer;
 }
+
 .item-button:hover {
   background-color: #1abc9c;
   border: 0px;
 }
+
 .busket {
   position: absolute;
   width: 164px;
@@ -261,9 +254,11 @@ p {
   font-weight: 300;
   color: #ffffff;
 }
+
 .busket span {
   padding-left: 45px;
 }
+
 .icon1 {
   position: absolute;
   left: 0px;
@@ -280,6 +275,7 @@ p {
   background-repeat: no-repeat;
   background-position: center;
 }
+
 .icon3 {
   position: absolute;
   right: 0px;
@@ -288,12 +284,92 @@ p {
   background-position: center;
 }
 
+.catalogue-item {
+  position: absolute;
+  background-color: #e9f0fd;
+}
+
+.card1 {
+  left: 0px;
+}
+
+.card2 {
+  left: 25%;
+  transform: translateX(7px);
+}
+
+.card3 {
+  left: 50%;
+  transform: translateX(14px);
+}
+
+.card4 {
+  right: 0px;
+  ;
+}
+
+.catalogue-item-card {
+  float: left;
+  width: 255px;
+  height: 322px;
+  background-color: #e9f0fd;
+}
+
+.catalogue-item img {
+  display: block;
+  margin: 0 auto;
+}
+
+p {
+  font-family: "Roboto", Arial, sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -0.36px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.title {
+  float: left;
+  padding-left: 12px;
+}
+
+.price {
+  text-align: center;
+  float: right;
+  width: 54px;
+  height: 40px;
+  background-color: rgb(255, 255, 255, 0.44);
+}
+
+.box {
+  width: 255px;
+  height: 40px;
+  background-color: #323232;
+}
+
+.catalogue-item:hover .box {
+  background-color: #1abc9c;
+}
+
+.catalogue-item:hover .catalogue-item-overlay {
+  opacity: 0.55;
+}
+
+.catalogue-item:hover .catalogue-item-buttons {
+  opacity: 1;
+}
+
 /* Style for "Footer" */
+
 .copyright {
   height: 90px;
   background-color: #323232;
   text-align: center;
 }
+
 .copyright span {
   display: inline-block;
   padding-top: 33px;
@@ -304,6 +380,7 @@ p {
   color: #ffffff;
   letter-spacing: -0.32px;
 }
+
 .copyright span:last-child {
   color: #46bfa9;
 }
