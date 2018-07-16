@@ -224,6 +224,7 @@ h2 {
 }
 
 .item-button {
+  position: relative;
   margin: 0;
   padding: 0;
   border: 1px solid #ffffff;
@@ -262,50 +263,31 @@ h2 {
 .icon1 {
   position: absolute;
   left: 0px;
-  background-image: url("../img/icons/heart.png");
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url("../img/icons/heart.png") no-repeat center; 
 }
 
 .icon2 {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  background-image: url("../img/icons/arrows.png");
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url("../img/icons/arrows.png") no-repeat center;
 }
 
 .icon3 {
   position: absolute;
   right: 0px;
-  background-image: url("../img/icons/clock.png");
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url("../img/icons/clock.png") no-repeat center;
 }
 
 .catalogue-item {
-  position: absolute;
+  position: relative;
+  display: inline-block;
   background-color: #e9f0fd;
+  margin-right: 25px;
 }
-
-.card1 {
-  left: 0px;
-}
-
-.card2 {
-  left: 25%;
-  transform: translateX(7px);
-}
-
-.card3 {
-  left: 50%;
-  transform: translateX(14px);
-}
-
-.card4 {
+.catalogue-item:last-child {
+  margin-right: 0px;
   right: 0px;
-  ;
 }
 
 .catalogue-item-card {
