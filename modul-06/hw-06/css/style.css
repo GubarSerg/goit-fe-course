@@ -42,15 +42,16 @@ img {
 }
 
 .site-menu__item::after {
-  display: none;
+  display: block;
   height: 3px;
   background-color: #f38181;
   content: "";
   position: relative;
   top: 9px;
+  opacity: 0;
 }
 .site-menu__item:hover::after {
-  display: block;
+  opacity: 1;
 }
 
 .logo {
@@ -327,6 +328,9 @@ img {
   background-color: #95e1d3;
 }
 
+
+.site-menu__item__link,
+.site-menu__item::after,
 .card-img,
 .overlay,
 .social,
