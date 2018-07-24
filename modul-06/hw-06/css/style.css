@@ -153,27 +153,27 @@ img {
 }
 
 .icon-clock::before {
-  background-image: url(/img/icons/alarm.png);
+  background-image: url(../img/icons/alarm.png);
 }
 
 .icon-pic::before {
-  background-image: url(/img/icons/line-graph.png);
+  background-image: url(../img/icons/line-graph.png);
 }
 
 .icon-comp::before {
-  background-image: url(/img/icons/computer---ok.png);
+  background-image: url(../img/icons/computer---ok.png);
 }
 
 .icon-book::before {
-  background-image: url(/img/icons/book-2.png);
+  background-image: url(../img/icons/book-2.png);
 }
 
 .icon-house::before {
-  background-image: url(/img/icons/home.png);
+  background-image: url(../img/icons/home.png);
 }
 
 .icon-qrcode::before {
-  background-image: url(/img/icons/image.png);
+  background-image: url(../img/icons/image.png);
 }
 
 /* Styles For Meet our team  */
@@ -295,19 +295,19 @@ img {
 }
 
 .facebook {
-  background: url(/img/icons/social/facebook.png) no-repeat #fce38a center center;
+  background: url(../img/icons/social/facebook.png) no-repeat #fce38a center center;
 }
 
 .twitter {
-  background: url(/img/icons/social/twitter.png) no-repeat #fce38a center center;
+  background: url(../img/icons/social/twitter.png) no-repeat #fce38a center center;
 }
 
 .pinterest {
-  background: url(/img/icons/social/pinterest.png) no-repeat #fce38a center center;
+  background: url(../img/icons/social/pinterest.png) no-repeat #fce38a center center;
 }
 
 .instagram {
-  background: url(/img/icons/social/instagram.png) no-repeat #fce38a center center;
+  background: url(../img/icons/social/instagram.png) no-repeat #fce38a center center;
 }
 
 .team-list__item__card:hover .card-img {
