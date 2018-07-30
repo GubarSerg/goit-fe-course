@@ -94,7 +94,6 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 898px;
   height: 106px;
 }
 
@@ -115,18 +114,9 @@
   font-size: 24px;
   font-weight: 300;
   line-height: 24px;
-  padding-left: 77px;
   text-transform: uppercase;
 }
 
-.slider-ctrl {
-  position: absolute;
-  width: 1110px;
-  height: 600px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 10;
-}
 
 .slider-button {
   width: 106px;
@@ -134,16 +124,18 @@
   border: none;
   position: absolute;
   background-color: rgba(26, 188, 156, 0.65);
-  top: 50%;
-  transform: translateY(-50%);
+  top: 247px;
+  z-index: 10;
 }
 
 .prev {
-  left: 0px;
+  left: 50%;
+  transform: translateX(-555px)
 }
 
 .next {
-  right: 0px;
+  right: 50%;
+  transform: translateX(555px)
 }
 
 .slider-button:hover {
@@ -279,7 +271,7 @@ h2 {
 
 .catalogue-item {
   position: relative;
-  display: inline-block;
+  float: left;
   background-color: #e9f0fd;
   margin-right: 25px;
 }
@@ -345,22 +337,18 @@ p {
 /* Style for "Footer" */
 
 .copyright {
-  height: 90px;
+  padding: 33px 0px;
   background-color: #323232;
   text-align: center;
-}
-
-.copyright span {
-  display: inline-block;
-  padding-top: 33px;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 16px;
   line-height: 28px;
   font-weight: 300;
   color: #ffffff;
   letter-spacing: -0.32px;
+  text-transform: none;
 }
 
-.copyright span:last-child {
+.copyright span {
   color: #46bfa9;
 }
