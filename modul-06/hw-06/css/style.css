@@ -8,27 +8,24 @@ img {
 
 .site-navigation {
   width: 1200px;
-  height: 175px;
   margin: 0 auto;
   font-family: "Montserrat", sans-serif;
-  padding-top: 25px;
+  padding: 25px 0px 120px;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
 }
 
-.site-menu {
+.menu {
   display: flex;
+  justify-content: space-between;
+  width: 490px;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.site-menu__item:not(:last-child) {
-  margin-right: 58px;
-}
-
-.site-menu__item__link {
+.menu-link {
   text-transform: uppercase;
   text-decoration: none;
   font-size: 14px;
@@ -37,20 +34,19 @@ img {
   color: #95e1d3;
 }
 
-.site-menu__item:hover .site-menu__item__link {
+.menu-item:hover .menu-link {
   color: #f38181;
 }
 
-.site-menu__item::after {
+.menu-item::after {
   display: block;
   height: 3px;
   background-color: #f38181;
   content: "";
-  position: relative;
-  top: 9px;
+  margin-top: 7px;
   opacity: 0;
 }
-.site-menu__item:hover::after {
+.menu-item:hover::after {
   opacity: 1;
 }
 
@@ -59,7 +55,7 @@ img {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 30px;
-  line-height: 30px;
+  line-height: 36px;
   color: #95e1d3;
 }
 
@@ -80,10 +76,11 @@ img {
   line-height: 29px;
   font-weight: 400;
   margin: 0px;
-  padding: 0px 0px 15px 0px;
+  margin-bottom: 15px;
 }
 
 .service h2 {
+  position: relative;
   text-align: center;
   color: #333333;
   font-family: Montserrat;
@@ -92,30 +89,32 @@ img {
   font-weight: 700;
   text-transform: uppercase;
   margin: 0px;
-  padding: 0px 0px 100px 0px;
+  margin-bottom: 100px;
 }
 
 .service h2::after {
+  position: absolute;
   display: block;
   height: 3px;
   width: 60px;
   background-color: #f38181;
   content: "";
-  margin: auto;
-  position: relative;
-  top: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 71px;
 }
 
 .service-block {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  align-content: space-between;
   list-style: none;
+  height: 240px;
   margin: 0;
   padding: 0;
 }
 
-.service-block__item h4 {
+.block-item h4 {
   color: #333333;
   font-family: Montserrat;
   font-size: 14px;
@@ -124,7 +123,7 @@ img {
   margin: 0px;
 }
 
-.service-block__item p {
+.block-item p {
   padding-left: 90px;
   margin: 0px;
   color: #999999;
@@ -134,17 +133,14 @@ img {
   line-height: 24px;
 }
 
-.service-block__item {
+.block-item {
   display: flex;
   flex-wrap: wrap;
-  flex: 0 0 370px;
+  flex: 0 0 400px;
 }
 
-.service-block__item:not(:nth-child(n + 4)) {
-  margin-bottom: 100px;
-}
 
-.service-block__item::before {
+.block-item::before {
   margin: 0px 29px;
   content: "";
   height: 32px;
@@ -179,7 +175,7 @@ img {
 /* Styles For Meet our team  */
 
 .team {
-  padding-top: 90px;
+  padding: 90px 0px 80px;
 }
 
 .team h3 {
@@ -190,10 +186,11 @@ img {
   line-height: 29px;
   font-weight: 400;
   margin: 0px;
-  padding: 0px 0px 15px 0px;
+  margin-bottom: 15px;
 }
 
 .team h2 {
+  position: relative;
   text-align: center;
   color: #333333;
   font-family: Montserrat;
@@ -202,23 +199,24 @@ img {
   font-weight: 700;
   text-transform: uppercase;
   margin: 0px;
-  padding: 0px 0px 86px 0px;
+  margin-bottom: 86px;
 }
 
 .team h2::after {
+  position: absolute;
   display: block;
   height: 3px;
   width: 60px;
   background-color: #f38181;
   content: "";
-  margin: auto;
-  position: relative;
-  top: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 71px;
 }
 
 .team p {
   margin: 0px;
-  padding-bottom: 90px;
+  margin-bottom: 90px;
   text-align: center;
   color: #999999;
   font-family: Roboto;
@@ -236,8 +234,9 @@ img {
   padding: 0px;
 }
 
-.team-list__item__card {
+.item-card {
   background-color: #95e1d3;
+  margin-bottom: 30px;
 }
 
 .overlay {
@@ -250,8 +249,8 @@ img {
 }
 
 .team-list h4 {
-  padding-top: 30px;
   margin: 0px;
+  margin-bottom: 12px;
   text-align: center;
   color: #333333;
   font-family: Montserrat;
@@ -260,6 +259,15 @@ img {
   text-transform: uppercase;
 }
 
+.team-list p {
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+  color: #999999;
+  font-size: 15px;
+  font-weight: 100;
+  font-style: italic;
+  line-height: 24px;
+}
 .social {
   opacity: 0;
   display: flex;
@@ -311,17 +319,17 @@ img {
   background: url(../img/icons/social/instagram.png) no-repeat #fce38a center center;
 }
 
-.team-list__item__card:hover .card-img {
+.item-card:hover .card-img {
   transform: translate(-10px, -10px);
   transition-property: transform;
 }
 
-.team-list__item__card:hover .overlay {
+.item-card:hover .overlay {
   opacity: 0.9;
   transform: translate(-10px, -10px);
 }
 
-.team-list__item__card:hover .social {
+.item-card:hover .social {
   opacity: 1;
 }
 
@@ -330,25 +338,14 @@ img {
 }
 
 
-.site-menu__item__link,
-.site-menu__item::after,
+.menu-link,
+.menu-item::after,
 .card-img,
 .overlay,
 .social,
 .social button {
   transition-duration: 0.2s;
   transition-timing-function: linear;
-}
-
-.team-list p {
-  font-family: "Roboto", sans-serif;
-  margin: 0px;
-  padding: 12px 0px 80px;
-  color: #999999;
-  font-size: 15px;
-  font-weight: 100;
-  font-style: italic;
-  line-height: 24px;
 }
 
 /* Styles For Footer  */
