@@ -26,6 +26,7 @@ img {
 }
 
 .menu-link {
+  position: relative;
   text-transform: uppercase;
   text-decoration: none;
   font-size: 14px;
@@ -38,15 +39,17 @@ img {
   color: #f38181;
 }
 
-.menu-item::after {
+.menu-link::after {
+  position: absolute;
   display: block;
+  width: 100%;
   height: 3px;
   background-color: #f38181;
   content: "";
-  margin-top: 7px;
+  top: 23px;
   opacity: 0;
 }
-.menu-item:hover::after {
+.menu-link:hover::after {
   opacity: 1;
 }
 
@@ -107,9 +110,10 @@ img {
 .service-block {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   align-content: space-between;
   list-style: none;
-  height: 240px;
+  min-height: 240px;
   margin: 0;
   padding: 0;
 }
@@ -120,11 +124,10 @@ img {
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
-  margin: 0px;
+  margin: 0px 0px 15px;
 }
 
 .block-item p {
-  padding-left: 90px;
   margin: 0px;
   color: #999999;
   font-family: Roboto;
@@ -134,14 +137,18 @@ img {
 }
 
 .block-item {
+  box-sizing: border-box;
+  padding-left: 96px;
   display: flex;
   flex-wrap: wrap;
-  flex: 0 0 400px;
+  width: 32%;
+  position: relative;
 }
 
 
 .block-item::before {
-  margin: 0px 29px;
+  position: absolute;
+  left: 32px;
   content: "";
   height: 32px;
   width: 32px;
@@ -339,7 +346,7 @@ img {
 
 
 .menu-link,
-.menu-item::after,
+.menu-link::after,
 .card-img,
 .overlay,
 .social,
@@ -357,15 +364,10 @@ img {
   align-items: center;
   width: 1200px;
   margin: 0 auto;
+  border-top: 1px solid #e5e5e5;
+  padding: 10px 0px;
 }
 
-.footer-container::before {
-  display: block;
-  height: 1px;
-  width: 100%;
-  background-color: #e5e5e5;
-  content: "";
-}
 
 .footer-container p {
   margin: 0px;
@@ -373,7 +375,6 @@ img {
   font-family: Montserrat;
   font-size: 14px;
   font-weight: 400;
-  padding: 24px 0px 24px;
 }
 
 .footer-container a {
