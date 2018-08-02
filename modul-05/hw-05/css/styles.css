@@ -8,7 +8,7 @@
   font-family: "Roboto", Arial, sans-serif;
   width: 1110px;
   margin: auto;
-  padding: 33px 0px 30px 0px;
+  padding: 33px 0px 30px;
 }
 
 .clearfix::after {
@@ -117,7 +117,6 @@
   text-transform: uppercase;
 }
 
-
 .slider-button {
   width: 106px;
   height: 106px;
@@ -130,12 +129,12 @@
 
 .prev {
   left: 50%;
-  transform: translateX(-555px)
+  transform: translateX(-555px);
 }
 
 .next {
   right: 50%;
-  transform: translateX(555px)
+  transform: translateX(555px);
 }
 
 .slider-button:hover {
@@ -169,17 +168,20 @@ h2 {
 
 .fp {
   margin: 0px 0px 126px;
+  position: relative;
 }
 
 .fp::after {
   display: block;
   width: 164px;
   height: 7px;
-  margin: auto;
+  margin: 0 auto;
   content: "";
   background-color: #1abc9c;
-  position: relative;
-  top: 27px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 85px;
 }
 
 /* Style for "CATALOGUE" */
@@ -253,7 +255,7 @@ h2 {
 .icon1 {
   position: absolute;
   left: 0px;
-  background: url("../img/icons/heart.png") no-repeat center; 
+  background: url("../img/icons/heart.png") no-repeat center;
 }
 
 .icon2 {
@@ -281,7 +283,6 @@ h2 {
 }
 
 .catalogue-item-card {
-  float: left;
   width: 255px;
   height: 322px;
   background-color: #e9f0fd;
