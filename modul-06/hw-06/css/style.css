@@ -242,12 +242,16 @@ img {
 }
 
 .item-card {
+  display: flex;
+}
+
+.item-card {
   background-color: #95e1d3;
   margin-bottom: 30px;
 }
 
 .overlay {
-  opacity: 0;
+  opacity: 0.9;
   z-index: 10;
   width: 380px;
   height: 470px;
@@ -275,14 +279,21 @@ img {
   font-style: italic;
   line-height: 24px;
 }
-.social {
+
+.social-block {
   opacity: 0;
+  display: flex;
+  width: 380px;
+  height: 470px;
+  position: absolute;
+}
+
+.social {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 380px;
   height: 470px;
-  position: absolute;
   z-index: 20;
 }
 
@@ -331,12 +342,10 @@ img {
   transition-property: transform;
 }
 
-.item-card:hover .overlay {
-  opacity: 0.9;
-  transform: translate(-10px, -10px);
-}
 
-.item-card:hover .social {
+
+.item-card:hover .social-block {
+  transform: translate(-10px, -10px);
   opacity: 1;
 }
 
@@ -348,8 +357,7 @@ img {
 .menu-link,
 .menu-link::after,
 .card-img,
-.overlay,
-.social,
+.social-block,
 .social button {
   transition-duration: 0.2s;
   transition-timing-function: linear;
