@@ -1,0 +1,272 @@
+/* damion-regular - latin */
+@font-face {
+  font-family: 'Damion';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Damion'),
+       url('../fonts/damion-v7-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/damion-v7-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-700 - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'),
+       url('../fonts/montserrat-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-slab-regular - latin */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'),
+       url('../fonts/roboto-slab-v7-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-slab-v7-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* Droid Serif Italic - latin */ 
+@font-face {
+  font-family: 'DroidSerif';
+  font-style: italic;
+  font-weight: 700;
+  src: local('DroidSerif Italic'), local('DroidSerif-Italic'),
+       url('../fonts/DroidSerif-Italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+}
+/* Styles For Navigation */
+
+.site-navigation {
+  width: 946px;
+  margin: 0 auto;
+  padding: 38px 0px 100px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  width: 480px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-link {
+  position: relative;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 600;
+  color: #222222;
+}
+
+.menu-item:hover .menu-link {
+  color: #fed136;
+}
+
+
+.logo {
+  text-decoration: none;
+  font-family: 'Damion', cursive;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 26px;
+  color: #fed136;
+}
+
+/* Styles For Main */
+
+.service {
+  width: 946px;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 115px;
+}
+
+/* Styles For Service */
+
+.service p {
+  color: #777777;
+  font-family: 'DroidSerif';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0px;
+  margin-bottom: 76px;
+}
+
+.service h2 {
+  position: relative;
+  color: #222222;
+  text-transform: uppercase;
+  margin: 0px;
+  margin-bottom: 15px;
+}
+
+
+.service-block {
+  display: flex;
+  justify-content: space-between;
+   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.block-item h4 {
+  color: #222222;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0px 0px 13px;
+}
+
+.block-item p {
+  margin: 0px;
+  color: #777777;
+  font-family: "Roboto Slab";
+  font-style:normal;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.block-item {
+width: 29.4%;
+}
+
+.item-icon {
+  margin: 0 auto;
+  margin-bottom: 24px;
+  width: 67px;
+  height: 67px;
+  border: 3px solid #fed136;
+  border-radius: 50%;
+  background: no-repeat center;
+}
+.icon-basket {
+  background-image: url(../img/icons/Icon-Basket.png);
+}
+
+.icon-comp {
+  background-image: url(../img/icons/Icon-Laptop.png);
+}
+
+.icon-lock {
+  background-image: url(../img/icons/Icon-Locked.png);
+}
+
+
+/* Styles For Contacts  */
+
+.contact {
+  padding: 105px 0px 114px;
+  background: #222222 url(../img/Map_Image.png) no-repeat bottom right;
+  text-align: center;
+}
+
+.contact h2 {
+  color: #ffffff;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin: 0px;
+  margin-bottom: 15px;
+}
+
+.contact p {
+  color: #777777;
+  font-family: "DroidSerif";
+  font-size: 16px;
+  margin: 0;
+  margin-bottom: 73px;
+}
+
+/* Styles For Form Block */
+.form-block {
+  width: 945px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.input::placeholder, .textarea::-webkit-input-placeholder{
+    font-size: 14px;
+    color: #bbbbbb;
+    text-transform: uppercase;
+}
+.input-block {
+  width: 455px;
+}
+.input {
+  box-sizing: border-box;
+  border: none;
+  border-radius: 2px;
+  width: 455px;
+  padding: 15px;
+}
+.input:not(:last-child) {
+ margin-bottom:33px; 
+}
+
+.textarea {
+  box-sizing: border-box;
+  width: 456px;
+height: 210px;
+border: 1px solid #cccccc;
+border-radius: 3px/5%;
+background-color: #ffffff;
+padding: 20px;
+resize: none;
+}
+
+.required:valid {
+  outline: 3px solid #0f0;
+}
+.required:invalid {
+  outline: 3px solid #f00;
+  -webkit-outline-radius: 2px;
+}
+
+.submit {
+  width: 240px;
+  height: 66px;
+  background-color: #fed136;
+  padding: 23px;
+color: #ffffff;
+font-size: 18px;
+text-transform: uppercase;
+border: none;
+border-radius: 2px;
+cursor: pointer;
+}
+/* visually-hidden helper */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
