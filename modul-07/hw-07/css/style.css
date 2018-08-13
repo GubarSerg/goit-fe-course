@@ -58,7 +58,7 @@ body {
 .site-navigation {
   width: 946px;
   margin: 0 auto;
-  padding: 38px 0px 100px;
+  padding: 42px 0px 112px;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -102,7 +102,7 @@ body {
   width: 946px;
   text-align: center;
   margin: 0 auto;
-  padding-bottom: 115px;
+  padding-bottom: 114px;
 }
 
 /* Styles For Service */
@@ -114,15 +114,17 @@ body {
   font-weight: 400;
   font-size: 16px;
   margin: 0px;
-  margin-bottom: 76px;
+  margin-bottom: 78px;
 }
 
 .service h2 {
   position: relative;
   color: #222222;
+  font-size: 40px;
   text-transform: uppercase;
+  letter-spacing: -1px;
   margin: 0px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .service-block {
@@ -137,7 +139,8 @@ body {
   color: #222222;
   font-size: 18px;
   font-weight: 400;
-  margin: 0px 0px 13px;
+  margin: 0px 0px 11px;
+  letter-spacing: -0.45px;
 }
 
 .block-item p {
@@ -146,16 +149,18 @@ body {
   font-family: "Roboto Slab";
   font-style: normal;
   font-size: 14px;
+  line-height: 22px;
   font-weight: 400;
+  letter-spacing: -0.35px;
 }
 
 .block-item {
-  width: 29.4%;
+  width: 29.7%;
 }
 
 .item-icon {
   margin: 0 auto;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
   width: 67px;
   height: 67px;
   border: 3px solid #fed136;
@@ -189,6 +194,7 @@ body {
   text-transform: uppercase;
   margin: 0px;
   margin-bottom: 15px;
+  letter-spacing: -1px;
 }
 
 .contact p {
@@ -240,7 +246,7 @@ body {
   border: 1px solid #cccccc;
   border-radius: 3px/5%;
   background-color: #ffffff;
-  padding: 20px;
+  padding: 12px 19px;
   outline: none;
   resize: none;
 }
