@@ -231,12 +231,14 @@ body {
   border: none;
   border-radius: 3px;
   width: 455px;
-  padding: 13px;
+  height: 50px;
+  padding: 0;
+  padding-left: 13px;
   outline: none;
 }
 
 .input:not(:last-child) {
-  margin-bottom: 33px;
+  margin-bottom: 30px;
 }
 
 .textarea {
