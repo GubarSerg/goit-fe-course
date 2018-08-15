@@ -60,7 +60,7 @@ body {
   margin: 0 auto;
   padding: 42px 0px 112px;
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
 }
 

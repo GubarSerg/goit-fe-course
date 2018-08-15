@@ -67,11 +67,11 @@
             <form action="#">
                 <div class="form-block">
                     <div class="input-block">
-                        <input class="input" type="text" name="user_name" required placeholder="your Name *">
-                        <input class="input" type="email" name="user_email" required placeholder="your e-mail *">
+                        <input class="input" type="text" name="user_name" placeholder="your Name" required pattern="[A-Za-zА-Яа-яЁё]{2,60}" title="A-z А-я от 2 до 60 символов">
+                        <input class="input" type="email" name="user_email" placeholder="your e-mail" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
                         <input class="input" type="user_text" name="user_subject" placeholder="subject">
                     </div>
-                    <textarea class="textarea" name="comments" required placeholder="Your message *"></textarea>
+                    <textarea class="textarea" name="comments" placeholder="Your message" required minlength="5" maxlength="250" title="A-z А-я от 5 до 250 символов"></textarea>
                 </div>
                 <button type="submit" class="submit">Send Message</button>
             </form>
