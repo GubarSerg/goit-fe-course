@@ -8,12 +8,12 @@ img {
 ul {
   list-style: none;
   padding: 0;
-  margin: 0 auto;
 }
 
 body {
   font-family: Montserrat;
   font-weight: 700;
+  min-width: 320px;
 }
 
 .container {
@@ -31,12 +31,7 @@ body {
   padding-top: 20px;
 }
 
-.signup-block {
-  margin-bottom: 35px;
-}
-
 .signup-list {
-  margin-bottom: 112px;
   width: 152px;
   display: flex;
   justify-content: space-between;
@@ -55,6 +50,7 @@ button {
 
 .login-button {
   border: none;
+  padding: 0;
 }
 
 .signin-button {
@@ -66,18 +62,19 @@ button {
 .logo {
   margin: 0;
   font-size: 20px;
+  line-height: 36px;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
 .header-content h3 {
-  margin: 0px 0px 17px;
   font-size: 30px;
+  letter-spacing: -1px;
   text-transform: uppercase;
 }
 
 .header-content p {
-  margin: 0px 0px 17px;
   font-family: Roboto;
   font-size: 18px;
   font-weight: 300;
@@ -99,22 +96,18 @@ button {
 .main-content {
   margin: 0 auto;
   text-align: center;
-  padding: 70px 0px 57px;
   color: #333333;
 }
 
 .partner h3 {
   margin: 0px 0px 15px;
   font-size: 22px;
-}
-
-.partner-list {
-  margin-bottom: 29px;
+  letter-spacing: -0.4px;
 }
 
 .partner-item {
   margin: 0 auto;
-  width: 220px;
+  width: 235px;
   position: relative;
 }
 
@@ -122,15 +115,11 @@ button {
   width: 33px;
   height: 33px;
   position: absolute;
-  right: 42px;
-  top: 83px;
+  right: 52px;
+  top: 85px;
   content: '';
   border: 4px solid #ffffff;
   border-radius: 50%;
-}
-
-.partner-item:not(:last-child) {
-  margin-bottom: 20px;
 }
 
 .partner-item img {
@@ -156,6 +145,7 @@ button {
 .partner-item h4 {
   margin: 0px 0px 15px;
   font-size: 14px;
+  letter-spacing: -0.4px;
 }
 
 .partner-item p {
@@ -175,4 +165,130 @@ button {
   color: #ff4e50;
   font-size: 14px;
   font-weight: 700;
+}
+
+@media screen and (max-height: 767px) {
+  .signup-list {
+    margin: 0 auto;
+    margin-bottom: 110px;
+  }
+  .signup-block {
+    margin-bottom: 23px;
+  }
+  .header-content h3 {
+    margin: 0px 0px 13px;
+  }
+  .header-content p {
+    width: 220px;
+    margin: 0 auto;
+    margin-bottom: 14px;
+  }
+  .main-content {
+    padding: 67px 0px 57px;
+  }
+
+  .partner-list {
+    margin: 0;
+    margin-bottom: 29px;
+  }
+  .partner-item {
+    margin-bottom: 25px;
+  }
+  .partner-item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-content {
+    padding: 67px 0px 57px;
+  }
+  .header-content {
+    padding-top: 37px;
+  }
+  .header-content h3 {
+    font-size: 51px;
+    line-height: 65px;
+    margin: 0px 0px 21px;
+  }
+  .header-content p {
+    width: 420px;
+    font-size: 24px;
+    margin: 0 auto;
+    margin-bottom: 34px;
+  }
+  .site-header {
+    background: url(../img/Back_Tablet.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 700px;
+  }
+  .signup-list {
+    order: 1;
+    margin: 0;
+  }
+  .signup-block {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 140px;
+    width: 670PX;
+  }
+  .partner h3 {
+    margin-bottom: 33px;
+  }
+  .partner-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 492px;
+    margin: 0 auto;
+    margin-bottom: 38px;
+  }
+  .partner-item {
+    margin: 0px 20px 55px 0; 
+  }
+  .partner-item p {
+    padding: 0px 10px;
+  }
+
+  .partner-item:nth-child(2) {
+    margin-bottom: 0px;
+  }
+  .partner-item:nth-child(4) {
+    margin-bottom: 0px;
+  }
+  
+  .icon-glass {
+    order: 2;
+  }
+  .icon-cup {
+    order:0;
+    margin-right: 0;
+  }
+  .icon-plane {
+    margin: 0;
+    order: 4;
+  }
+  .find-button {
+    width: 225px;
+  }
+  .partner-button {
+    width: 192px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .site-header {
+    background: url(../img/Back.jpg) no-repeat center;
+    min-height: 700px;
+  }
+  .signup-block {
+    width: 940px;
+  }
+  .partner-list {
+    width: 940px;
+    justify-content: space-between;
+  }
+  .partner-item {
+    width: 220px;
+    margin: 0;
+  }
 }
