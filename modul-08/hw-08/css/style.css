@@ -39,6 +39,7 @@ body {
 
 button {
   outline: none;
+  cursor: pointer;
 }
 
 .button {
@@ -278,6 +279,7 @@ button {
 @media screen and (min-width: 960px) {
   .site-header {
     background: url(../img/Back.jpg) no-repeat center;
+    background-size: cover;
     min-height: 700px;
   }
   .signup-block {
