@@ -1,0 +1,301 @@
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+body {
+  font-family: Montserrat;
+  font-weight: 700;
+}
+
+.site-header {
+  background: url(../img/Back_Mobile.jpg) no-repeat center;
+  background-size: cover;
+  min-height: 540px;
+}
+
+.header-content {
+  padding-top: 20px;
+}
+
+.signup-list {
+  width: 170px;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+}
+
+.button {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 14px;
+  height: 36px;
+}
+
+.login-button {
+  border: none;
+  padding: 0;
+}
+
+.signin-button {
+  width: 90px;
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+}
+
+.logo {
+  margin: 0;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.header-content h3 {
+  font-size: 30px;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+}
+
+.header-content p {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.find-button {
+  width: 280px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  background-color: #ff4e50;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* Sectione Style */
+
+.main-content {
+  text-align: center;
+  color: #333333;
+}
+
+.partner h3 {
+  margin: 0 auto;
+  font-size: 22px;
+  letter-spacing: -0.4px;
+}
+
+.partner-list {
+  width: 230px;
+  margin: 0 auto;
+}
+
+.partner-item {
+  position: relative;
+  min-height: 240px;
+}
+
+.icon::after {
+  width: 41px;
+  height: 41px;
+  position: absolute;
+  top: 85px;
+  content: '';
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+}
+
+.partner-item img {
+  margin-bottom: 20px;
+}
+
+.icon-tv::after {
+  background: #ff4e50 url(../img/icons/Shape_128.png) no-repeat center;
+}
+
+.icon-glass::after {
+  background: #ffa507 url(../img/icons/Shape_155.png) no-repeat center;
+}
+
+.icon-cup::after {
+  background: #1cd7ad url(../img/icons/Shape_153.png) no-repeat center;
+}
+
+.icon-plane::after {
+  background: #4e73db url(../img/icons/Shape_170.png) no-repeat center;
+}
+
+.partner-item h4 {
+  margin: 0px 0px 15px;
+  font-size: 14px;
+  letter-spacing: -0.4px;
+}
+
+.partner-item p {
+  margin: 0;
+  color: #666666;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.partner-button {
+  width: 280px;
+  height: 40px;
+  border-radius: 20px;
+  border: 2px solid #ff4e50;
+  background-color: #ffffff;
+  color: #ff4e50;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+@media screen and (max-height: 767px) {
+  .signup-list {
+    margin: 0 auto;
+    margin-bottom: 110px;
+  }
+  .signup-block {
+    margin-bottom: 23px;
+  }
+  .header-content h3 {
+    margin: 0px 0px 13px;
+  }
+  .header-content p {
+    width: 220px;
+    margin: 0 auto;
+    margin-bottom: 14px;
+  }
+  .main-content {
+    padding: 67px 0px 57px;
+  }
+  .partner-list {
+    margin-bottom: 29px;
+  }
+  .icon::after {
+    right: 52px;
+  }
+  .partner-item {
+    min-height: 200px;
+    margin-bottom: 25px;
+  }
+  .partner-item:last-child {
+    margin-bottom: 0;
+  }
+  .mrb-part_p {
+    margin-bottom: 12px;
+  }
+  .partner h3 {
+    width: 265px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-content {
+    padding: 67px 0px 57px;
+  }
+  .header-content {
+    padding-top: 37px;
+  }
+  .header-content h3 {
+    font-size: 51px;
+    line-height: 65px;
+    margin: 0px 0px 21px;
+  }
+  .header-content p {
+    width: 420px;
+    font-size: 24px;
+    margin: 0 auto;
+    margin-bottom: 34px;
+  }
+  .site-header {
+    background: url(../img/Back_Tablet.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 700px;
+  }
+  .signup-list {
+    margin: auto;
+  }
+  .signup-block {
+    margin: 0 auto;
+    margin-bottom: 140px;
+  }
+  .partner h3 {
+    width: auto;
+  }
+  .partner-list {
+    width: 510px;
+    margin: 0 auto;
+  }
+  .icon::after {
+    right: 62px;
+  }
+  .partner-item p {
+    width: 230px;
+  }
+  .partner-item {
+    margin-bottom: 60px;
+  }
+  .partner-item:nth-child(2) {
+    margin-bottom: 0px;
+  }
+  .partner-item:nth-child(4) {
+    margin-bottom: 0px;
+  }
+  .icon-cup {
+    margin-right: 0;
+  }
+  .icon-plane {
+    margin: 0;
+  }
+  .find-button {
+    width: 225px;
+  }
+  .partner-button {
+    width: 192px;
+  }
+  .mrb-part_p {
+    margin-bottom: 32px;
+  }
+  .mrb-part_list {
+    margin-bottom: 34px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .site-header {
+    background: url(../img/Back.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 700px;
+  }
+  .signup-block {
+    width: 940px;
+  }
+  .logo {
+    text-align: left;
+  }
+  .signup-list {
+    margin-right: 0;
+  }
+  .partner-list {
+    width: 940px;
+  }
+  .partner-item {
+    width: 220px;
+    margin: 0;
+  }
+}
