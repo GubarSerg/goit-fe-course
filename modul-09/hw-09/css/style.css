@@ -106,7 +106,6 @@ button {
 
 .partner-item {
   position: relative;
-  min-height: 240px;
 }
 
 .icon::after {
@@ -295,7 +294,6 @@ button {
     width: 940px;
   }
   .partner-item {
-    width: 220px;
     margin: 0;
   }
 }
