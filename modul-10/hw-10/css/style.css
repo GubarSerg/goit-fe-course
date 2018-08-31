@@ -25,7 +25,7 @@ ul {
 
 button {
   color: #ffffff;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
@@ -159,8 +159,7 @@ button {
   font-size: 24px;
   line-height: 29px;
   font-weight: 400;
-  margin: 0px;
-  margin-bottom: 15px;
+  margin: 0px 0px 15px;
 }
 
 .service__subtitle {
@@ -169,8 +168,7 @@ button {
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 0px;
-  margin-bottom: 100px;
+  margin: 0px 0px 100px;
 }
 
 .service__subtitle::after {
