@@ -34,7 +34,7 @@ button {
 }
 
 .header {
-  height: 1000px;
+  min-height: 1000px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 129, 129, 0.9)), to(rgba(252, 227, 138, 0.9))), url(../img/back.jpg) no-repeat center;
   background: -webkit-linear-gradient(top, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)), url(../img/back.jpg) no-repeat center;
   background: -o-linear-gradient(top, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)), url(../img/back.jpg) no-repeat center;
@@ -65,11 +65,11 @@ button {
           justify-content: space-between;
 }
 
-.nav__menu {
+.menu {
   width: 620px;
 }
 
-.nav__link {
+.menu__link {
   position: relative;
   text-transform: uppercase;
   text-decoration: none;
@@ -79,11 +79,11 @@ button {
   color: #fff;
 }
 
-.nav__item:hover .nav__link {
+.menu__item:hover .nav__link {
   color: #fce38a;
 }
 
-.nav__link::after {
+.menu__link::after {
   position: absolute;
   display: block;
   width: 100%;
@@ -94,18 +94,18 @@ button {
   opacity: 0;
 }
 
-.nav__link:hover::after {
+.menu__link:hover::after {
   opacity: 1;
 }
 
-.nav__icon {
+.menu__icon {
   width: 18px;
   height: 18px;
   fill: #fff;
   cursor: pointer;
 }
 
-.nav__icon:hover {
+.menu__icon:hover {
   fill: #fce38a;
 }
 
@@ -120,15 +120,14 @@ button {
   font-family: "Kaushan Script";
   font-size: 72px;
   font-weight: 400;
-  margin-bottom: 35px;
+  margin: 0px 0px 35px;
 }
 
 .header__subtitle {
   margin: 0 auto;
-  margin-bottom: 107px;
-  width: 835px;
+  margin-bottom: 108px;
+  width: 836px;
   font-size: 150px;
-  line-height: 140px;
   text-transform: uppercase;
 }
 
@@ -148,7 +147,7 @@ button {
   margin: 0 auto;
 }
 
-.section {
+section {
   padding-top: 44px;
   color: #333333;
 }
@@ -306,10 +305,10 @@ button {
   line-height: 24px;
 }
 
-/* Styles For Team card  */
+/* Styles For Team card-team  */
 
 
-.card {
+.card-team {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -317,7 +316,7 @@ button {
   margin-bottom: 30px;
 }
 
-.btn-wrap__overlay {
+.card-team__overlay {
   opacity: 0.9;
   z-index: 10;
   width: 380px;
@@ -329,7 +328,7 @@ button {
   background-image: linear-gradient(to bottom, #f38181, #fce38a);
 }
 
-.card__title {
+.card-team__title {
   margin: 0px;
   margin-bottom: 5px;
   font-size: 14px;
@@ -337,7 +336,7 @@ button {
   text-transform: uppercase;
 }
 
-.card__subtitle {
+.card-team__subtitle {
   font-family: "Roboto", sans-serif;
   margin: 0px;
   color: #999999;
@@ -347,42 +346,27 @@ button {
   line-height: 24px;
 }
 
-.card__social {
+.card-team__social {
   opacity: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  align-items: center;
+  justify-content: center;
   width: 380px;
   height: 470px;
   position: absolute;
 }
 
-.btn-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 380px;
-  height: 470px;
-  z-index: 20;
-}
 
-.btn-wrap__list {
+.card-team__list {
   position: absolute;
   z-index: 20;
-  -webkit-transform: translate(-10px, -10px);
-      -ms-transform: translate(-10px, -10px);
-          transform: translate(-10px, -10px);
   width: 224px;
   height: 56px;
 }
 
-.btn-wrap__btn {
+.card-team__btn {
   margin: 0px;
   padding: 0px;
   border: none;
@@ -397,14 +381,14 @@ button {
   height: 26px;
 }
 
-.btn-wrap__btn:not(:nth-child(3)) {
+.card-team__btn:not(:nth-child(3)) {
   border-right: 1px solid rgba(243, 129, 129, 0.5);
 }
 
-.btn-wrap__btn:hover .social-icon {
+.card-team__btn:hover .social-icon {
   fill: #fff;
 }
-.card:hover .card__img {
+.card-team:hover .card-team__img {
   -webkit-transform: translate(-10px, -10px);
       -ms-transform: translate(-10px, -10px);
           transform: translate(-10px, -10px);
@@ -415,22 +399,22 @@ button {
   transition-property: transform, -webkit-transform;
 }
 
-.card:hover .card__social {
+.card-team:hover .card-team__social {
   -webkit-transform: translate(-10px, -10px);
       -ms-transform: translate(-10px, -10px);
           transform: translate(-10px, -10px);
   opacity: 1;
 }
 
-.btn-wrap__btn:hover {
+.card-team__btn:hover {
   background-color: #f38181;
 }
 
 .nav__link,
 .nav__link::after,
-.card__img,
-.card__social,
-.btn-wrap__btn {
+.card-team__img,
+.card-team__social,
+.card-team__btn {
   -webkit-transition-duration: 0.2s;
        -o-transition-duration: 0.2s;
           transition-duration: 0.2s;
@@ -458,25 +442,25 @@ button {
   padding: 10px 0px;
 }
 
-.footer__copyright {
+.copyright {
   margin: 0px;
   color: #333333;
   font-size: 14px;
   font-weight: 400;
 }
 
-.footer__copyright-link {
+.copyright__link {
   text-decoration: none;
   color: #f38181;
 }
 
-.form {
+.subscribe-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.form__input {
+.subscribe-form__input {
   padding-left: 15px;
   width: 230px;
   height: 40px;
@@ -505,7 +489,7 @@ button {
   color: #cccccc;
 }
 
-.form__subscribe {
+.subscribe-form__btn {
   padding: 0px;
   width: 150px;
   height: 42px;
