@@ -410,8 +410,8 @@ section {
   background-color: #f38181;
 }
 
-.nav__link,
-.nav__link::after,
+.menu__link,
+.menu__link::after,
 .card-team__img,
 .card-team__social,
 .card-team__btn {
