@@ -23,6 +23,10 @@ ul {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 button {
   color: #ffffff;
   font-family: "Montserrat", sans-serif;
@@ -34,7 +38,7 @@ button {
 }
 
 .header {
-  min-height: 1000px;
+  padding: 23px 0px 227px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 129, 129, 0.9)), to(rgba(252, 227, 138, 0.9))), url(../img/back.jpg) no-repeat center;
   background: -webkit-linear-gradient(top, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)), url(../img/back.jpg) no-repeat center;
   background: -o-linear-gradient(top, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)), url(../img/back.jpg) no-repeat center;
@@ -53,28 +57,31 @@ button {
   width: 1200px;
   margin: 0 auto;
   margin-bottom: 165px;
-  padding-top: 23px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.menu {
+.nav__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 620px;
 }
+.menu {
+   width: 494px;
+ }
 
 .menu__link {
   position: relative;
   text-transform: uppercase;
-  text-decoration: none;
   font-size: 14px;
-  line-height: 16px;
   font-weight: 400;
   color: #fff;
 }
@@ -98,19 +105,18 @@ button {
   opacity: 1;
 }
 
-.menu__icon {
+.nav__icon {
   width: 18px;
   height: 18px;
   fill: #fff;
   cursor: pointer;
 }
 
-.menu__icon:hover {
+.nav__icon:hover {
   fill: #fce38a;
 }
 
 .nav__logo {
-  text-decoration: none;
   font-size: 30px;
   line-height: 36px;
   color: #fff;
@@ -120,6 +126,7 @@ button {
   font-family: "Kaushan Script";
   font-size: 72px;
   font-weight: 400;
+  line-height: 86px;
   margin: 0px 0px 35px;
 }
 
@@ -128,6 +135,8 @@ button {
   margin-bottom: 108px;
   width: 836px;
   font-size: 150px;
+  line-height: 0.94;
+  letter-spacing: -8px;
   text-transform: uppercase;
 }
 
@@ -450,7 +459,6 @@ section {
 }
 
 .copyright__link {
-  text-decoration: none;
   color: #f38181;
 }
 

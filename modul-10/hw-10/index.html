@@ -14,9 +14,9 @@
 
 <body>
     <header class="header">
-        <div class="header__overlay">
-            <nav class="nav">
-                <a class="nav__logo" href="#">MoGo</a>
+        <nav class="nav">
+            <a class="nav__logo" href="#">MoGo</a>
+            <div class="nav__menu">
                 <ul class="menu">
                     <li class="menu__item">
                         <a class="menu__link" href="#">About</a>
@@ -33,25 +33,20 @@
                     <li class="menu__item">
                         <a class="menu__link" href="#">contact</a>
                     </li>
-                    <li class="menu__item">
-                        <svg class="menu__icon">
-                            <use href="img/icons/sprite.svg#SHOPPING-CART" />
-                        </svg>
-                    </li>
-                    <li class="menu__item">
-                        <svg class="menu__icon">
-                            <use href="img/icons/sprite.svg#MAGNIFYING-GLASS" />
-                        </svg>
-                    </li>
                 </ul>
-            </nav>
-            <h3 class="header__title">Creative Template</h3>
-            <h2 class="header__subtitle">Welcome to MOGO</h3>
-                <button class="header__button">Learn more</button>
-        </div>
+                <svg class="nav__icon">
+                    <use href="img/icons/sprite.svg#SHOPPING-CART" />
+                </svg>
+                <svg class="nav__icon">
+                    <use href="img/icons/sprite.svg#MAGNIFYING-GLASS" />
+                </svg>
+            </div>
+        </nav>
+        <h2 class="header__title">Creative Template</h2>
+        <h1 class="header__subtitle">Welcome to MOGO</h1>
+            <button class="header__button">Learn more</button>
     </header>
     <main class="main-container">
-        <h1 class="visually-hidden">MoGo main page</h1>
         <!-- Amazing Services Section -->
         <section class="service">
             <h3 class="service__title">We work with</h3>
@@ -240,7 +235,8 @@
             <a class="copyright__link" href="#">Laaqiq</a>
         </p>
         <form class="subscribe-form" action="#">
-            <input class="subscribe-form__input" type="email" name="user_email" placeholder="Your Email..." required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+            <input class="subscribe-form__input" type="email" name="user_email" placeholder="Your Email..." required
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
             <button class="subscribe-form__btn" type="submit">Subscribe</button>
         </form>
     </footer>
