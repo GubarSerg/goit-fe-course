@@ -55,6 +55,7 @@ button {
 /* Styles For Navigation */
 .nav {
   width: 1200px;
+  line-height: 36px;
   margin: 0 auto;
   margin-bottom: 165px;
   display: -webkit-box;
