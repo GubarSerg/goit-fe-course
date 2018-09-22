@@ -1,0 +1,122 @@
+.team {
+  padding: 90px 0px 80px;
+
+  &__title {
+    @include font_style('Kaushan Script', 24px, 400, 29px, none, map-get($map: $colors, $key: dark-grey));
+    margin-bottom: 15px;
+  }
+
+  &__subtitle {
+    @include font_style('Montserrat', 30px, 700, 36px, uppercase, map-get($map: $colors, $key: dark-grey));
+    position: relative;
+    margin: 0px 0px 76px;
+
+    &::after {
+      position: absolute;
+      display: block;
+      height: 3px;
+      width: 60px;
+      background-color: color(coral);
+      content: "";
+      left: 50%;
+      transform: translateX(-50%);
+      top: 71px;
+    }
+  }
+
+  &__text {
+    @include font_style('Roboto', 15px, 400, 24px, none, map-get($map: $colors, $key: semi-grey));
+    margin: $block-center;
+    width: 956px;
+    margin-bottom: 90px;
+  }
+}
+
+.card-team {
+  display: flex;
+  background-color: color(green);
+  margin-bottom: 30px;
+
+  &__overlay {
+    opacity: 0.9;
+    z-index: 10;
+    width: 380px;
+    height: 470px;
+    position: absolute;
+    background-image: linear-gradient(to bottom, #f38181, #fce38a);
+  }
+
+  &__title {
+    @include font_style('Montserrat', 14px, 600, 16px, uppercase, map-get($map: $colors, $key: dark-grey));
+    margin: 0px;
+    margin-bottom: 5px;
+  }
+
+  &__subtitle {
+    @include font_style('Roboto', 15px, 100, 24px, none, map-get($map: $colors, $key: semi-grey));
+    margin: 0px;
+    font-style: italic;
+  }
+
+  &__social {
+    @include flex_block(flex, center, center);
+    opacity: 0;
+    width: 380px;
+    height: 470px;
+    position: absolute;
+  }
+
+  &__list {
+    position: absolute;
+    z-index: 20;
+    width: 224px;
+    height: 56px;
+  }
+
+  &__btn {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    width: 56px;
+    height: 56px;
+    background: color(yelllow);
+    cursor: pointer;
+
+    &:not(:nth-child(3)) {
+      border-right: 1px solid rgba(243, 129, 129, 0.5);
+    }
+
+    &:hover .social-icon {
+      fill: #fff;
+    }
+
+    &:hover {
+      background-color: color(coral);
+    }
+  }
+
+  &:hover .card-team__img {
+    transform: translate(-10px, -10px);
+    transition-property: transform;
+  }
+
+  &:hover .card-team__social {
+    transform: translate(-10px, -10px);
+    opacity: 1;
+  }
+}
+
+.social-icon {
+  fill: color(coral);
+  width: 26px;
+  height: 26px;
+}
+
+.menu__link,
+.menu__link::after,
+.card-team__img,
+.card-team__social,
+.card-team__btn {
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}

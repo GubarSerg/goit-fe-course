@@ -1,0 +1,16 @@
+$colors: (
+  dark-grey: #333333,
+  semi-grey: #999999,
+  light-grey: #ccc,
+  coral: #f38181,
+  yelllow: #fce38a,
+  green: #95e1d3,
+  white: #fff
+);
+
+@function color($key) {
+  @if map-has-key($map: $colors, $key: $key) {
+    @return map-get($map: $colors, $key: $key);
+  }
+  @return null;
+}

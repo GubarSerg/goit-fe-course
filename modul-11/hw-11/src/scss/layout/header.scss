@@ -1,0 +1,85 @@
+.header {
+  padding: 23px 0px 227px;
+  background: linear-gradient(to bottom, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)), url(../img/back.jpg) no-repeat center;
+  background-size: cover;
+
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../img/back@2x.jpg)
+  }
+
+  &__title {
+    @include font_style('Kaushan Script', 72px, 400, 86px, none, map-get($map: $colors, $key: white));
+    margin: 0px 0px 35px;
+  }
+
+  &__subtitle {
+    @include font_style('Montserrat', 150px, 700, 0.94, uppercase, map-get($map: $colors, $key: white));
+    margin: $block-center;
+    margin-bottom: 108px;
+    width: 836px;
+    letter-spacing: -8px;
+  }
+
+  &__button {
+    width: 160px;
+    height: 40px;
+    border: 3px solid #ffffff;
+    background-color: transparent;
+    @include font_style('Montserrat', 14px, 700, 16px, uppercase, map-get($map: $colors, $key: white));
+  }
+}
+
+.nav {
+  @include flex_block(flex, space-between, center);
+  width: 1200px;
+  margin: $block-center;
+  margin-bottom: 165px;
+
+  &__menu {
+    @include flex_block(flex, space-between, center);
+    width: 620px;
+  }
+
+  &__icon {
+    width: 18px;
+    height: 18px;
+    fill: #fff;
+    cursor: pointer;
+
+    &:hover {
+      fill: color(yelllow);
+    }
+  }
+
+  &__logo {
+    @include font_style('Montserrat', 30px, 700, 36px, none, map-get($map: $colors, $key: white));
+  }
+}
+
+.menu {
+  width: 494px;
+
+  &__link {
+    @include font_style('Montserrat', 14px, 400, 36px, uppercase, map-get($map: $colors, $key: white));
+    position: relative;
+
+    &::after {
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: color(yelllow);
+      content: "";
+      top: 23px;
+      opacity: 0;
+    }
+
+    &:hover::after {
+      opacity: 1;
+    }
+  }
+
+  &__item:hover .menu__link {
+    color: color(yelllow);
+  }
+}

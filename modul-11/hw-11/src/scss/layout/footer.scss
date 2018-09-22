@@ -1,0 +1,41 @@
+.footer {
+  @include flex_block(flex, space-between, center, wrap);
+  width: 1200px;
+  margin: $block-center;
+  border-top: 1px solid #e5e5e5;
+  padding: 10px 0px;
+}
+
+.copyright {
+  @include font_style('Montserrat', 14px, 400, 16px, none, map-get($map: $colors, $key: dark-grey));
+  &__link {
+    color: color(coral);
+  }
+}
+
+.subscribe-form {
+  display: flex;
+
+  &__input {
+    padding-left: 15px;
+    width: 230px;
+    height: 38px;
+    border: 1px solid #e7e7e7;
+    @include font_style('Roboto', 15px, 100, 24px, none, map-get($map: $colors, $key: light-grey));
+    font-style: italic;
+    outline: none;
+  }
+
+  &__btn {
+    padding: 0px;
+    width: 150px;
+    height: 42px;
+    border: none;
+    @include font_style('Montserrat', 14px, 700, 16px, uppercase, map-get($map: $colors, $key: white));
+    background-color: #95e1d3;
+  }
+}
+
+::placeholder {
+  color: color(light-grey);
+}

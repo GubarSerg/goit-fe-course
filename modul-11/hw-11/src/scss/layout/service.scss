@@ -1,0 +1,82 @@
+.service {
+  padding-top: 44px;
+
+  &__title {
+    @include font_style('Kaushan Script', 24px, 400, 29px, none, map-get($map: $colors, $key: dark-grey));
+    margin: 0px 0px 15px;
+  }
+
+  &__subtitle {
+    @include font_style('Montserrat', 30px, 700, 36px, uppercase, map-get($map: $colors, $key: dark-grey));
+    position: relative;
+    margin: 0px 0px 100px;
+
+    &::after {
+      position: absolute;
+      display: block;
+      height: 3px;
+      width: 60px;
+      background-color: color(coral);
+      content: "";
+      left: 50%;
+      transform: translateX(-50%);
+      top: 71px;
+    }
+  }
+
+  &__list {
+    @include flex_block(flex, space-between, '', wrap);
+    align-content: space-between;
+    min-height: 240px;
+  }
+
+  &__item-title {
+    @include font_style('Montserrat', 14px, 600, 16px, uppercase, map-get($map: $colors, $key: dark-grey));
+    margin: 0px 0px 15px;
+  }
+
+  &__item-subtitle {
+    @include font_style('Roboto', 15px, 400, 24px, none, map-get($map: $colors, $key: semi-grey));
+    text-align: left;
+    margin: 0px;
+  }
+
+  &__item {
+    box-sizing: border-box;
+    padding-left: 96px;
+    width: 32%;
+    position: relative;
+    @include flex_block(flex, '', '', wrap);
+    &::before {
+      position: absolute;
+      left: 32px;
+      content: "";
+      height: 32px;
+      width: 32px;
+      background-repeat: no-repeat;
+    }
+  }
+}
+.icon-clock::before {
+  background-image: url(/img/icons/ALARM.svg);
+}
+
+.icon-pic::before {
+  background-image: url(/img/icons/QR.svg);
+}
+
+.icon-comp::before {
+  background-image: url(/img/icons/COMPUTER.svg);
+}
+
+.icon-book::before {
+  background-image: url(/img/icons/BOOK.svg);
+}
+
+.icon-house::before {
+  background-image: url(/img/icons/HOME.svg);
+}
+
+.icon-qrcode::before {
+  background-image: url(/img/icons/IMAGE.svg);
+}

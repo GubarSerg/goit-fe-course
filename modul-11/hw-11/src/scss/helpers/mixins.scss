@@ -1,0 +1,15 @@
+@mixin font_style($family: '', $fsize: '', $fweight: 400, $lheight: '',$ftrans: uppercase, $fcolor: ''){
+    font-family: $family;
+    font-size: $fsize ;
+    font-weight: $fweight;
+    line-height: $lheight;
+    text-transform: $ftrans;
+    color: $fcolor;
+}
+
+@mixin flex_block($display: 'flex', $just_cont: '', $align-items: '', $wrap: ''){
+    display: $display;
+    justify-content: $just_cont;
+    align-items: $align-items;
+    flex-wrap: $wrap;
+}
